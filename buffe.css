@@ -1,0 +1,166 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black
+    background-color #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: rgb(136, 25, 25);
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Estilo para o submenu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    z-index: 1000;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+nav ul li ul li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+    background: url('imgs/hero-image.jpg') no-repeat center center/cover;
+    color: rgb(136, 25, 25);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Seções de Galeria */
+.gallery-section {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.gallery-section .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contato Section */
+.contact-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.contact-section .container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-section ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contact-section ul li {
+    margin-bottom: 10px;
+}
+
+.contact-section ul li strong {
+    font-weight: bold;
+}
